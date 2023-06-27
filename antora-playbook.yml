@@ -1,0 +1,21 @@
+site:
+  title: Huyen Nguyen
+  start_page: docs:ROOT:index.adoc
+git:
+  ensure_git_suffix: false
+content:
+  sources:
+  - url: https://github.com/HuyenNguyen238/Test04.git
+    start_path: docs
+    branches: master
+    # setting edit_url to false disables the Edit this Page link for any page that originates from this repository
+    # the same thing can be achieved by adding empty credentials (i.e., @) in front of the domain in the URL
+    edit_url: false
+  - url: https://github.com/HuyenNguyen238/Test02.git
+    branches: master
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+
+
